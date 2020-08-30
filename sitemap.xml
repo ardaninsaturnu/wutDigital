@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://www.workuptogether.com/portfolio.html</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-07-01</lastmod>
+</url>
+<url>
+  <loc>http://www.workuptogether.com/form.html</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>undefined-undefined-2020-07-01</lastmod>
+</url>
+<url>
+  <loc>http://www.workuptogether.com/./form.html</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>undefined-undefined-undefined-undefined-2020-07-01</lastmod>
+</url>
+<url>
+  <loc>http://www.workuptogether.com/./index.html</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>undefined-undefined-undefined-undefined-undefined-undefined-2020-07-01</lastmod>
+</url>
+<url>
+  <loc>http://www.workuptogether.com/index.html</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>undefined-undefined-undefined-undefined-undefined-undefined-undefined-undefined-2020-07-01</lastmod>
+</url>
+</urlset>

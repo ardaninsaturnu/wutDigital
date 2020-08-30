@@ -1,0 +1,131 @@
+.container {
+    background-color: #35353500;
+}
+
+
+
+
+/*header*/
+
+.menu-wrap {
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+
+/*manifesto */
+
+#manifesto {
+    flex-direction: column-reverse;
+    margin: 3rem 0 !important;
+}
+
+#manifesto .manifest {
+    width: 70%;
+    margin: 1rem 0 !important;
+}
+
+#manifesto .paragraph-box {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.manifest img {
+    width: 100% !important;
+}
+.manifest .contactButton{
+    margin: 2rem auto;
+    width: 80%;
+}
+
+
+
+/*product */
+
+#products .product-box {
+    width: 90% !important;
+}
+
+
+/*explain */
+
+.explain-box .paragraph-box {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 80% !important;
+}
+
+.explain-box {
+    flex-direction: column;
+}
+
+.explain-box .img {
+    width: 100% ;
+}
+
+.explain-box img{
+    margin: 0 !important;
+}
+
+
+/* footer */
+
+
+
+
+.left {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.contact {
+    padding-top: 1rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    padding: 0.4rem 2rem;
+}
+
+.heading {
+    padding: 0rem 1rem;
+}
+
+.form label {
+    margin-left: 6rem;
+    font-size: 1.2rem;
+}
+
+
+.inside-form input {
+    width: 90%;
+    
+}
+
+
+
+
+
+
+/*---------form.html-------------*/
+
+.in-form .button {
+    border: 1px solid;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    background-color: gold;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    width: 60% !important;
+}
+
+.in-form input {
+    width: 90%;
+}
+
+
+
+

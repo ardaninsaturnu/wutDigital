@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.portfolio-body {
+    background-color: white !important;}
+
+
+::-webkit-scrollbar {
+    width: 2rem;
+    border-radius: 0rem;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000b2;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-image: radial-gradient( circle 603px at 32.8% 51%,  rgba(253,185,51,1) 0%, rgba(253,211,117,1) 90.3% );
+
+    height: 5px;
+    
+}
+
+
+.portfolio-header {
+    background: #614385;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding :1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    background: #614385;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
+
+}
+
+.container {
+   
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* -------Header starts here --------- */
+
+
+
+/*---social-menu---------*/
+
+
+
+
+/*-----navbar-hamburger-------*/
+.menu-wrap{
+    position: relative;
+    top: 40px;
+    left: 290px;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity:0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger >div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger >div::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .toggler:checked + .hamburger>div {
+    transform:rotate(135deg);
+}
+.menu-wrap .toggler:checked + .hamburger>div::before,
+.menu-wrap .toggler:checked + .hamburger>div::after {
+    top: 0;
+    transform:rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger>div {
+    transform: rotate(225deg);
+}
+
+/*show menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu>div {
+    transform: scale(1);
+    transition-duration:var(--menu-speed) ;
+}
+
+.menu-wrap .toggler:checked ~ .menu>div>div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrap .menu>div {
+    background-color: #0a0a0aad;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu>div>div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu>div>div >ul >li {
+    list-style: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu>div>div >ul >li>a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+}
+
+/*--navbar finish-----*/
+
+
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+
+/*------------- Header ends here --------------*/
+
+/*----------- Manifest starts here------------*/
+
+#manifesto {
+    display: flex;
+    align-items: center;
+}
+
+.manifest {
+    width: 50%;
+}
+
+
+.manifest .contactButton {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    color: #353535;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: background 2s ease;
+    background-image: radial-gradient( circle 603px at 32.8% 51%,  rgba(253,185,51,1) 0%, rgba(253,211,117,1) 90.3% );
+}
+
+.contactButton:hover {
+    background-color: #f8ceec;
+background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
+}
+
+.manifest .heading-md {
+    font-size: 1.7rem;
+    color: white;
+    text-align: left;
+    padding: 0 8rem;
+    margin: 0 !important;
+}
+
+.manifest .paragraph {
+    padding: 0 8rem;
+    font-size: 1rem !important;
+}
+
+
+
+/*------------ Manifest ends here------------*/
+
+
+/*------------ products starts here------------*/
+
+#products {
+    display: flex;
+    margin: 5rem 1rem;
+    flex-wrap: wrap;
+}
+
+
+#products .product-box {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*size*/
+    background-color: #080303;
+    color: white;
+    width: 30%;
+    height: 300px;
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 8%;
+    transition: all 2s ease-in;
+    
+
+}
+
+
+.product-box .head {
+    height: 50%;
+}
+
+.product-box .img {
+    height: 50%;
+    
+}
+
+
+.product-box img {
+    width: 100%;
+}
+
+.pr {
+    transition: background 0.3s;
+}
+
+.pr:hover {
+    
+    background-color: #d254fe;
+    background-image: linear-gradient(167deg, #d254fe 0%, #8831b5 100%);
+    
+}
+
+.yl:hover{
+    background-color: #ffcc42;
+    background-image: linear-gradient(155deg, #ffcc42 0%, #ffc475 100%);
+    
+
+}
+
+.gr:hover{
+    
+    background-color: #54fa7e;
+    background-image: linear-gradient(19deg, #54fa7e 0%, #289945 100%);
+    
+
+
+
+}
+
+.or:hover{
+    background-color: #ff853f;
+    background-image: linear-gradient(167deg, #ff853f 0%, #ffa64e 100%);
+    
+
+}
+
+.rd:hover {
+    background-color: #f24931;
+    background-image: linear-gradient(165deg, #f24931 0%, #ec3e5f 55%, #e46078 100%);
+    
+   
+
+}
+
+.prp:hover {
+    
+    background-color: #a74afa;
+    background-image: linear-gradient(45deg, #a74afa 0%, #4d2dcc 100%);
+    color: white;
+    
+
+}
+
+
+
+
+
+/*------------ products ends here------------*/
+
+/*------------ explain-container starts here------------*/
+
+#explain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explain-box {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:5rem 2rem ;
+    margin: 2rem 1rem;
+    transition: box-shadow .3s;
+    border-radius: 10px;
+}
+
+
+.explain-box:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 20px 10px -10px rgba(14, 13, 13, 0.767);
+
+        }
+
+
+.explain-box .paragraph-box {
+    width: 50%;
+    padding: 1rem 4rem;
+}
+
+.explain-box .img {
+    width: 50%;
+    display: flex;}
+    
+.explain-box .img img {
+    width: 50%;
+    margin-left: 7rem;
+}
+
+
+/*------------ explain ends here------------*/
+
+/*------------ footer starts here------------*/
+
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.right {
+    width: 50%;
+    justify-content: center;
+    min-height: 500px;
+}
+.left {
+    width: 50%;
+    
+    min-height: 500px;
+}
+
+.left .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact,.brand {
+    height: 50%;
+    
+}
+
+.brand {
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 35px;
+    padding: 0rem 5rem;
+    padding-top: 5rem;
+}
+
+.contact p {
+    font-size: 25px;
+    padding: 0.4rem 5rem;
+}
+
+.error{
+    background-color: coral;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5rem 0;
+}
+
+#form .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+    align-items: center;
+
+}
+
+.inside-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.inside-form input {
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid #b1b1b1;
+    padding: 0.7rem 1rem;
+    width: 50%;
+    outline: none;
+    margin: 0.5rem auto;
+}
+
+.inside-form .button {
+    border: 1px solid;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    background-color: gold;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+
+/*------------ footer ends here------------*/
+
+
+.all {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------portfolio.css--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+#portfolio {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .portfolio_box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+.content-box {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 2s ease;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+
+.content-box:hover {
+    background-color: #000000;
+}
+
+.blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    opacity: 0;
+    background-color: #000000ad;
+    transition: opacity 1s ease-out ;
+    cursor: pointer;
+}
+
+.blur>p {
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.search-blur {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.content-box:hover .blur {
+    opacity: 1;
+}
+
+
+
+.content {
+    width: 65%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.port-ad {
+    color: dimgrey;
+    padding:0.5rem 0 ;
+}
+
+.port-title {
+    padding-top: 1rem;
+}
+
+
+
+/* ------------------modal boxes styling ------------------*/
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000093;
+    top: 0;
+    left: 0;
+    transition: all 2s ease;
+    overflow: hidden;
+    display: none;
+}
+
+.modal-image {
+    width: 100%;
+    height:100%;
+    background-color:rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image img {
+    width: 25%;
+    height: 90%;
+}
+
+.modal-image>.close {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    right: 400px;
+    top: 30px;
+    font-weight: 600;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.modal-image>.close:hover {
+
+    transform: rotate(90deg);
+    color: gold;
+
+}
+
+
+
