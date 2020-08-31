@@ -1,8 +1,5 @@
 User-agent: *
-Allow : /
-Disallow : /wp-admin
-Disallow : /images
-Disallow : /.git
-Disallow : /mock-up
-Disallow : /portfolio
-Sitemap : /
+Disallow: 
+Crawl-delay: 5
+Disallow: /cgi-bin/
+Sitemap: sitemap: https://workuptogether.com/sitemap.xml
